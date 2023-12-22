@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" </head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Kindly fill this form with required information</p>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org" method="POST">
+        <fieldset>
+            <label id="name-label" for="name">Name
+                <input id="name" type="text" required placeholder="Enter your name" name="name" /></label>
+            <label id="email-label" for="email">Email <input id="email" type="email" required
+                    placeholder="Enter your email" name="email" /></label>
+            <label id="number-label" for="number">Age <input id="number" type="number" min="13" max="120"
+                    placeholder="Age" name="age" /></label>
+            <label id="">Which role are you interested in?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Software Engineering</option>
+                    <option value="2">Product Design</option>
+                    <option value="3">Data Analyst</option>
+                    <option value="4">Mobile Developer</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend us?</legend>
+            <label for="definately"><input type="radio" value="definately" name="recommend" />Definately</label>
+            <label for="maybe"><input type="radio" value="maybe" name="recommend" />Maybe</label>
+            <label for="not-sure"><input type="radio" value="not-sure" name="recommend" />Not sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="favourite">What do you like about us?</label>
+            <label for="open-source"><input type="checkbox" value="open-source" /> Open Source</label>
+            <label for="community"><input type="checkbox" value="open-source" />Community</label>
+            <label for="projects"><input type="checkbox" value="open-source" /> Projects</label>
+            <label for="bio">Tell us more about yourself
+                <textarea id="bio" name="bio" row="3" col="30"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
