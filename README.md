@@ -1,1 +1,1 @@
-This repo contains all my certification learning in freecodecamp
+This repo contains all my certification learning on freecodecamp
